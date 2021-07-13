@@ -1,4 +1,6 @@
-
+  //This is the first work on 
+  //adjusting the mmols with Javascript
+  //This code was used in NodeRed
   var date = msg.payload.date;
   var time = msg.payload.time;
   var mmols = msg.payload.mmol;
@@ -7,7 +9,7 @@
 
 
 
-
+  
   var newMsg ={};
   newMsg.topic = "INSERT INTO calibrateTable(Date,Time,mmols,WRGBMmols,RGBMmols)  VALUES(\'"+ date + " \', \' " + time + "\', \'" + mmols + "\', " + WRGBMmols + ", " + RGBMmols + ")";
 
